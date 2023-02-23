@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import { Route, Routes } from "react-router-dom";
+import Question from "./components/AddQuestion/Index";
+import Answer from "./components/body/Answer";
+import Authentication from "./auth/Authentication";
+import Index from "./components/stackoverflow/Index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <NavBar />
+      <Authentication />
+      <Routes>
+
+        <Route path="/login" element={<Authentication />} />
+        <Route path="/questions" element={<Index />} />
+        <Route path="/add-question" element={<Question />} />
+        <Route path="/questions/:id/answer" element={<Answer/>} />
+      </Routes>
     </div>
   );
 }

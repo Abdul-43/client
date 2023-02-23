@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.ask-comment{
+    margin-top: 30px;
+    width:70%;
+    height:120px;
+}
+.ask-button{
+    background-color:hsl(206deg 100% 52%);
+    color:white;
+    height:40px;
+    border-width: 0px;
+    border-radius: 5px;
+}
+.auth-card
+{
+    margin-top: 30px;
+    box-shadow: 7px 7px 10px #9E9E9E;
+    border: 1px solid grey;
+    width: 30%;
+    border-radius: 15px;
+    background-color: white;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgb(241,242,244);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-form{
+    margin-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    width: 70%;
+    height:20px;
 }
+.login-button{
+    background-color:hsl(206deg 100% 52%);
+    color:white;
+    height:40px;
+    border-width: 0px;
+    border-radius: 5px;
+    width: 70%;
+    font-weight: bold;
+    font-size: large;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register-button{
+    background-color:hsl(206deg 100% 52%);
+    color:white;
+    height:40px;
+    border-width: 0px;
+    border-radius: 5px;
+    width: 70%;
+}
+.auth-footer{
+    margin-bottom: 30px;
+}
+.search-input{
+    margin-left: 20px;
 }
